@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MenuColor</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/MyAccent</item>
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+    </style>
+
+    <style name="MyActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- remove shadow below action bar -->
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="MyHintText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/MyAccent</item>
+        <item name="colorControlNormal">@color/MyAccent</item>
+        <item name="colorControlActivated">@color/MyAccent</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/MyAccentDark</item>
+        <item name="colorButtonNormal">@color/MyAccent</item>
+        <item name="elevation">200dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+</resources>

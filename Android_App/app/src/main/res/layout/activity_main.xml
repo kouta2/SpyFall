@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arvin.spyfall.Activities.Main.Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundColor"
+        android:orientation="vertical" >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:background="@color/MenuColor"
+            app:tabTextColor="#ffffff"
+            app:tabSelectedTextColor="@color/MyAccent"
+            app:tabIndicatorColor="@color/MyAccent">
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:text="Join Room"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:text="Create Room"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TabLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/results"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:errorEnabled="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/MyAccent"
+            app:hintTextAppearance="@style/MyHintText">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:hint="Username"
+                android:backgroundTint="@color/MyAccent"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/main_fragment"
+            android:name="com.example.arvin.spyfall.Activities.Main.JoinRoom"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/spy_black" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

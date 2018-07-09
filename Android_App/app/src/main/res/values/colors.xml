@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="MyGreen">#ff9ccc65</color>
+    <color name="MyRed">#ffff8a80</color>
+    <color name="MyTeal">#ff546E7A</color>
+    <color name="MyOrange">#FFC400</color>
+    <color name="MyBlue">#1A237E</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="BackgroundColor">#37474f</color>
+    <color name="MyPrimaryDark">#000000</color>
+    <color name="MyAccent">#ffab00</color>
+    <color name="MyAccentDark">#bf360c</color>
+    <!--<color name="MySecondary">#40c4ff</color>-->
+    <color name="MySecondary">#8bc34a</color>
+    <color name="MySecondaryDark">#01579b</color>
+    <color name="MenuColor">#263238</color>
+    <color name="WordsColor">#546E7A</color>
+</resources>
